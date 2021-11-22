@@ -1,0 +1,43 @@
+﻿<Window x:Class="Bai11_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bai11_3"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="Quản lý danh mục sản phẩm" Height="535" Width="621">
+    <Grid Background="#FFFFF900">
+        
+        <Label Content="Mã sản phẩm:" HorizontalAlignment="Left" Margin="27,20,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Tên sản phẩm:" HorizontalAlignment="Left" Margin="25,60,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Số lượng:" HorizontalAlignment="Left" Margin="27,100,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Đơn giá:" HorizontalAlignment="Left" Margin="27,141,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Mã loại" HorizontalAlignment="Left" Margin="27,179,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtTenSP" HorizontalAlignment="Left" Margin="185,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="30"/>
+        <TextBox x:Name="txtSoLuong" HorizontalAlignment="Left" Margin="185,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="30"/>
+        <TextBox x:Name="txtMaSP" HorizontalAlignment="Left" Margin="185,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="30"/>
+        <TextBox x:Name="txtDonGia" HorizontalAlignment="Left" Margin="185,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="30"/>
+        <TextBox x:Name="txtMaLoai" HorizontalAlignment="Left" Margin="185,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="30"/>
+        
+        <Grid Grid.Column="0" Margin="20,235,20,50" Grid.ColumnSpan="2">
+            <DataGrid x:Name="danhsachTable" CanUserAddRows="False" AutoGenerateColumns="False" SelectedCellsChanged="ShowItemDanhSach">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Mã sản phẩm" Width="50" Binding="{Binding MaSp}"/>
+                    <DataGridTextColumn Header="Tên sản phẩm" Width="150" Binding="{Binding TenSp}"/>
+                    <DataGridTextColumn Header="Số lượng" Width="100" Binding="{Binding SoLuong}"/>
+                    <DataGridTextColumn Header="Đơn giá" Width="100" Binding="{Binding DonGia}"/>
+                    <DataGridTextColumn Header="Tên loại sản phẩm" Width="*" Binding="{Binding TenLoai}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+        <WrapPanel VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Button x:Name="btnThem" Content="Thêm" Width="80" Margin="10" Click="btnThem_Click"/>
+            <Button x:Name="btnSua" Content="Sửa" Width="80" Margin="10" Click="btnSua_Click"/>
+            <Button x:Name="btnXoa" Content="Xóa" Width="80" Margin="10" Click="btnXoa_Click"/>
+            <Button x:Name="btnThoat" Content="Thoát" Width="80" Margin="10" Click="btnThoat_Click"/>
+        </WrapPanel>
+        
+    </Grid>
+</Window>

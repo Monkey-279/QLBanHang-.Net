@@ -1,0 +1,8 @@
+D:\Program 2021-2022\NET_CSharp\BaiTH11_WPF\LINQ_Bai11_1\LINQ_Bai11_1\bin\Debug\LINQ_Bai11_1.exe.config
+D:\Program 2021-2022\NET_CSharp\BaiTH11_WPF\LINQ_Bai11_1\LINQ_Bai11_1\bin\Debug\LINQ_Bai11_1.exe
+D:\Program 2021-2022\NET_CSharp\BaiTH11_WPF\LINQ_Bai11_1\LINQ_Bai11_1\bin\Debug\LINQ_Bai11_1.pdb
+D:\Program 2021-2022\NET_CSharp\BaiTH11_WPF\LINQ_Bai11_1\LINQ_Bai11_1\obj\Debug\LINQ_Bai11_1.csproj.AssemblyReference.cache
+D:\Program 2021-2022\NET_CSharp\BaiTH11_WPF\LINQ_Bai11_1\LINQ_Bai11_1\obj\Debug\LINQ_Bai11_1.csproj.SuggestedBindingRedirects.cache
+D:\Program 2021-2022\NET_CSharp\BaiTH11_WPF\LINQ_Bai11_1\LINQ_Bai11_1\obj\Debug\LINQ_Bai11_1.csproj.CoreCompileInputs.cache
+D:\Program 2021-2022\NET_CSharp\BaiTH11_WPF\LINQ_Bai11_1\LINQ_Bai11_1\obj\Debug\LINQ_Bai11_1.exe
+D:\Program 2021-2022\NET_CSharp\BaiTH11_WPF\LINQ_Bai11_1\LINQ_Bai11_1\obj\Debug\LINQ_Bai11_1.pdb
